@@ -5,7 +5,7 @@ require_relative "models/project"
 class App < Sinatra::Base
   register Sinatra::Flash
   register Sinatra::Partial
-  #use Rack::MethodOverride
+  use Rack::MethodOverride
 
   get "/" do
     redirect "/issues"
